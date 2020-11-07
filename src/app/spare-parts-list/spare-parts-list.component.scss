@@ -1,3 +1,17 @@
 h1 {
     color: blue;
 }
+
+.clearance {
+    background-color: rgba(0, 255, 0, 0.295);
+}
+
+.centrado {
+    display: table-row;
+    flex-direction: column;
+}
+
+.oferta {
+    color: rgba(0, 121, 6, 0.993);
+    font-size: 30px;
+}

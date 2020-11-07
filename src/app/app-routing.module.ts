@@ -1,7 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MugicaSparesComponent } from './mugica-spares/mugica-spares.component';
+import { MugicaAboutComponent } from './mugica-about/mugica-about.component';
+const routes: Routes = [
+  {
+    path:'',
+    redirectTo: 'spares',
+    pathMatch: 'prefix'
+  },
+  {
+    path:'spares',
+    component: MugicaSparesComponent 
+  },
+  {
+    path:'about',
+    component: MugicaAboutComponent 
+  },
 
-const routes: Routes = [];
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
